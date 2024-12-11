@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="assets/css/style.css">
         <link rel="js" href="assets/js/javascript.js">
         <style>
-         @import url('https://fonts.googleapis.com/css?family=Raleway:300,500,700');
+          @import url('https://fonts.googleapis.com/css?family=Raleway:300,500,700');
 
 /* Global */
 * {
@@ -131,7 +131,7 @@ input[type="checkbox"]:checked ~ .navbar{
   position: absolute;
   width: 100%;
   height: 100vh;
-  background-color: #00c0ffc2;
+  background-color: #ff000073;
   justify-content: space-evenly;
   align-items: center;
   z-index: -2;
@@ -196,13 +196,10 @@ a.nav-link:focus{
   width: 1.5rem;
   height: 1.5rem;
 }
-
-  @media screen and (min-width: 577px) {
-    .cards-wrapper {
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-    }
+@media screen and (min-width: 577px) {
+  .cards-wrapper {
+    display: flex;
+  }
   .card {
     margin: 0 0.5em;
     width: calc(100% / 2);
@@ -225,10 +222,10 @@ a.nav-link:focus{
 
 /* Hero Section */
 .hero {
-	display: flex;
-	height: 600px;
-	align-items: center;
-	background: #f5d9d6 url("https://hips.hearstapps.com/roa.h-cdn.co/assets/cm/14/47/480x269/546b4ab21a57e_-_tumblr_n45uo4uauh1rnxn7co1_500-77192960-lg.gif?resize=480:*") no-repeat right bottom;
+  display: flex;
+  align-items: center;
+  background: #f5d9d6 url("https://hips.hearstapps.com/roa.h-cdn.co/assets/cm/14/47/480x269/546b4ab21a57e_-_tumblr_n45uo4uauh1rnxn7co1_500-77192960-lg.gif?resize=480:*") no-repeat right bottom;
+  flex-direction: column;
 }
 .hero-img img{
   display: none;
@@ -371,12 +368,12 @@ section#about{
     margin: 0 2em;
   }
 }
-@media(min-width: 768px){
-  /*  Global  */
-  .wrapper{
-    display: flex;
+@media (min-width: 768px) {
+  .wrapper {
+      display: flex;
+      flex-direction: column-reverse;
   }
-  
+}
   /*  Header  */
   .nav-brand img{
     height: 77px;
@@ -2279,7 +2276,7 @@ p {
   .xl\:grid-cols-7 {
     grid-template-columns: repeat(7, minmax(0, 1fr)) !important;
   }
-}   
+}
         </style>
     </head>
         <body>
